@@ -1,0 +1,41 @@
+// board layer definitions
+{
+  "name" : "DDL Power Supply V7.1",
+  "directory" : "/home/tyapo/devel/hackaday/diode_clock/hackaday_temp/DDL02/",
+  "files" : 
+  [
+    {
+      "filename" : "ddl_power_supply_v71.GKO",
+      "type"     : "outline"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.XLN",
+      "type"     : "holes"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GTL",
+      "type"     : "top_copper"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GTS",
+      "type"     : "top_mask"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GTO",
+      "type"     : "top_silk"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GBL",
+      "type"     : "bottom_copper"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GBS",
+      "type"     : "bottom_mask"
+    },
+    {
+      "filename" : "ddl_power_supply_v71.GBO",
+      "type"     : "bottom_silk"
+    }
+  ],
+  "process" : "OSH Park"
+}

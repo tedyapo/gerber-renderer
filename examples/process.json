@@ -1,0 +1,70 @@
+// process defintions
+{
+  "processes" :
+  [
+    {
+      "name" : "OSH Park",
+
+      "substrate_material"   : "FR-4",        
+      "substrate_thickness"  : "62.5 mil",
+
+      "top_pad_material"     : "ENIG",
+      "top_trace_material"   : "copper",
+      "top_copper_thickness" : "1 oz",
+      
+      "top_mask_material"    : "OSH Park mask",
+//      "top_mask_material"    : "black mask",
+      "top_mask_thickness"   : "1.2 mil",
+      
+      "top_silk_material"    : "white silk",
+      "top_silk_thickness"   : "1 mil",
+//      "top_silk_resolution"  : "5 mil"
+
+      "bottom_pad_material"     : "ENIG",
+      "bottom_trace_material"   : "copper",
+      "bottom_copper_thickness" : "1 oz",
+      
+      "bottom_mask_material"    : "OSH Park mask",
+//      "bottom_mask_material"    : "black mask",
+      "bottom_mask_thickness"   : "1.2 mil",
+      
+      "bottom_silk_material"    : "white silk",
+      "bottom_silk_thickness"   : "1 mil",
+      
+      // may need to add resolutions for copper, mask layers to avoid
+      //   gerbv "striping" bug(s)
+    },
+    {
+      "name" : "iTead Black Mask",
+
+      "substrate_material"   : "FR-4",        
+      "substrate_thickness"  : "62.5 mil",
+
+      "top_pad_material"     : "HASL",
+      "top_trace_material"   : "copper",
+      "top_copper_thickness" : "1 oz",
+      
+//      "top_mask_material"    : "OSH Park mask",
+      "top_mask_material"    : "black mask",
+      "top_mask_thickness"   : "1.2 mil",
+      
+      "top_silk_material"    : "white silk",
+      "top_silk_thickness"   : "1 mil",
+//      "top_silk_resolution"  : "5 mil"
+
+      "bottom_pad_material"     : "HASL",
+      "bottom_trace_material"   : "copper",
+      "bottom_copper_thickness" : "1 oz",
+      
+//      "bottom_mask_material"    : "OSH Park mask",
+      "bottom_mask_material"    : "black mask",
+      "bottom_mask_thickness"   : "1.2 mil",
+      
+      "bottom_silk_material"    : "white silk",
+      "bottom_silk_thickness"   : "1 mil",
+      
+      // may need to add resolutions for copper, mask layers to avoid
+      //   gerbv "striping" bug(s)
+    }
+  ]
+}

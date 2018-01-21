@@ -1,0 +1,278 @@
+//
+// materials defintions
+//
+
+/*
+  to-do:
+  [ ] add OSH Park purple mask
+  [ ] add standard green mask
+  [ ] add some other masks (red, black, yellow, blue, clear)
+  [ ] add some other silks (black)
+*/
+{
+  "materials" :
+  [
+    
+    //
+    // FR-4 / G10 Fiberglass Laminate
+    //
+    {
+      "name" : "FR-4",
+      "aliases" :
+      [
+        "G10",
+        "fiberglass"
+      ],
+      "color" :
+      {
+        "red"   : 0.41176,
+        "green" : 0.61961,
+        "blue"  : 0.51373,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.041176,
+ 	      "green" : 0.061961,
+ 	      "blue"  : 0.051373,
+      },
+      "diffuse" :
+      {
+        "red"   : 0.41176,
+ 	      "green" : 0.61961,
+ 	      "blue"  : 0.51373
+      },
+      "specular" :
+      {
+        "red"   : 0.45,
+ 	      "green" : 0.5,
+ 	      "blue"  : 0.47
+      },
+      "shininess"    : 0.1,
+ 	    "transparency" : 0.0
+    },
+    
+    //
+    // copper
+    //
+    {
+      "name" : "copper",
+      "color" :
+      {
+        "red"   : 0.72157,
+        "green" : 0.45098,
+        "blue"  : 0.2,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.19125, 
+ 	      "green" : 0.0735,
+ 	      "blue"  : 0.0225
+      },
+      "diffuse" :
+      {
+        "red"   : 0.7038,
+ 	      "green" : 0.27048,
+ 	      "blue"  : 0.0828
+      },
+      "specular" :
+      {
+        "red"   : 0.256777,
+ 	      "green" : 0.137622,
+ 	      "blue"  : 0.086014
+      },
+      "shininess"    : 0.1,
+ 	    "transparency" : 0.0
+    },
+
+    //
+    // gold/ENIG
+    //
+    {
+      "name" : "gold",
+      "aliases" : 
+      [
+        "ENIG"
+      ],
+      "color" :
+      {
+        "red"   : 1.0,
+        "green" : 0.84314,
+        "blue"  : 0.0,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.24725, 
+ 	      "green" : 0.1995,
+ 	      "blue"  : 0.0745
+      },
+      "diffuse" :
+      {
+        "red"   : 0.75164,
+ 	      "green" : 0.60648,
+ 	      "blue"  : 0.22648
+      },
+      "specular" :
+      {
+        "red"   : 0.628281,
+ 	      "green" : 0.555802,
+ 	      "blue"  : 0.366065
+      },
+      "shininess"    : 0.4,
+ 	    "transparency" : 0.0
+    },
+
+    //
+    // silver/IAg/HASL (until better materials created)
+    //
+    {
+      "name" : "silver",
+      "aliases" : 
+      [
+        "IAg",
+        "ISn",
+        "HASL"
+      ],
+      "color" :
+      {
+        "red"   : 0.78824,
+        "green" : 0.75294,
+        "blue"  : 0.73333,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.19225, 
+ 	      "green" : 0.19225,
+ 	      "blue"  : 0.19225
+      },
+      "diffuse" :
+      {
+        "red"   : 0.50754,
+ 	      "green" : 0.50754,
+ 	      "blue"  : 0.50754
+      },
+      "specular" :
+      {
+        "red"   : 0.508273,
+ 	      "green" : 0.508273,
+ 	      "blue"  : 0.508273
+      },
+      "shininess"    : 0.4,
+ 	    "transparency" : 0.0
+    },
+
+    //
+    // OSH Park signature purple soldermask
+    //  ( this model doesn't do it justice )
+    {
+      "name" : "OSH Park mask",
+      "aliases" :
+      [
+        "purple soldermask"
+      ],
+      "color" :
+      {
+        "red"   : 0.3,
+        "green" : 0.0,
+        "blue"  : 0.3,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.25,
+ 	      "green" : 0.0,
+ 	      "blue"  : 0.1,
+      },
+      "diffuse" :
+      {
+        "red"   : 0.1,
+ 	      "green" : 0.0,
+ 	      "blue"  : 0.4
+      },
+      "specular" :
+      {
+        "red"   : 0.1,
+ 	      "green" : 0.1,
+ 	      "blue"  : 0.2
+      },
+      "shininess"    : 0.1,
+ 	    "transparency" : 0.1
+    },
+
+    //
+    // OSH Park signature purple soldermask
+    //  ( this model doesn't do it justice )
+    {
+      "name" : "black mask",
+      "aliases" :
+      [
+        "black soldermask"
+      ],
+      "color" :
+      {
+        "red"   : 0.0,
+        "green" : 0.0,
+        "blue"  : 0.0,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.01,
+ 	      "green" : 0.01,
+ 	      "blue"  : 0.01,
+      },
+      "diffuse" :
+      {
+        "red"   : 0.01,
+ 	      "green" : 0.01,
+ 	      "blue"  : 0.01
+      },
+      "specular" :
+      {
+        "red"   : 0.1,
+ 	      "green" : 0.1,
+ 	      "blue"  : 0.1
+      },
+      "shininess"    : 0.1,
+ 	    "transparency" : 0.1
+    },
+
+    //
+    // White silkscreen
+    //
+    {
+      "name" : "white silk",
+      "color" :
+      {
+        "red"   : 1.0,
+        "green" : 1.0,
+        "blue"  : 1.0,
+        "alpha" : 1.0
+      },
+      "ambient" :
+      {
+        "red"   : 0.2,
+ 	      "green" : 0.2,
+ 	      "blue"  : 0.2,
+      },
+      "diffuse" :
+      {
+        "red"   : 1.0,
+ 	      "green" : 1.0,
+ 	      "blue"  : 1.0
+      },
+      "specular" :
+      {
+        "red"   : 1.0,
+ 	      "green" : 1.0,
+ 	      "blue"  : 1.0
+      },
+      "shininess"    : 0.8,
+ 	    "transparency" : 0.0
+    }
+
+  ]
+}
