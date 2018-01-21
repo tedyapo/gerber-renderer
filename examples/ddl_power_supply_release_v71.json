@@ -1,7 +1,7 @@
 // board layer definitions
 {
   "name" : "DDL Power Supply V7.1",
-  "directory" : "/home/tyapo/devel/hackaday/diode_clock/hackaday_temp/DDL02/",
+  "directory" : "./",
   "files" : 
   [
     {

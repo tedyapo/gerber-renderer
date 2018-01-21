@@ -1,0 +1,6 @@
+To test the example:
+
+cd ../src
+make
+cd ../examples
+../src/gerb3d ddl_power_supply_release_v71.json
