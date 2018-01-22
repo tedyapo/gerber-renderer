@@ -1,9 +1,9 @@
 binaries = gerb3d
-objects = Material.o Process.o Board.o BumpMap.o MaterialMap.o
+objects = Material.o Process.o Board.o BumpMap.o MaterialMap.o zpr.o json_parsing.o
 
 all : ${binaries} ${objects}
 
-CFLAGS = -Wall -std=c++0x -O3
+CFLAGS = -Wall -fopenmp -std=c++0x -O3
 
 vector_test: vector_test.cpp VectorN.hpp
 	g++ ${CFLAGS} -o $@ $<
@@ -26,20 +26,11 @@ Board.o : Board.cpp Board.hpp Process.hpp Material.hpp
 json_parsing.o : json_parsing.cpp Board.o
 	g++ ${CFLAGS} `pkg-config --cflags libgerbv` -c $^ -o $@ Board.o
 
-#json_test: json_test.cpp json_parsing.o Material.o Board.o Process.o BumpMap.o MaterialMap.o
-#	g++ ${CFLAGS} $^ -o $@ `pkg-config --cflags libgerbv` `pkg-config --libs libgerbv` -ljson -lGL -lGLU -lglut
-
-#gerber2png : gerber2png.c
-#		g++ ${CFLAGS} -o $@ $^ `pkg-config --cflags libgerbv` `pkg-config --libs libgerbv`
-
 zpr.o: zpr.c
 	gcc -c -o $@ $^
 
 gerb3d: gerb3d.cpp zpr.o Material.o Process.o json_parsing.o BumpMap.o MaterialMap.o Board.o
-	g++ $(CFLAGS)  -o $@ $^ `pkg-config --cflags libgerbv` `pkg-config --libs libgerbv` -lGL -lGLU -lglut -lpthread -ljson
-
-#render_board : render_board.cxx
-#	g++ ${CFLAGS} -o $@ $^
+	g++ $(CFLAGS)  -o $@ $^ `pkg-config --cflags libgerbv` `pkg-config --libs libgerbv` -lGL -lGLU -lglut -lpthread -ljson-c
 
 clean:
 	rm -f *~ ${binaries} ${objects}
