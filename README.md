@@ -1,11 +1,12 @@
 # gerber-renderer
 3D PCB renderer for checking gerber files before manufacture
 
-__Build Instructions__
-# install pre-requsites
+# Build Instructions
+
+__install pre-requsites__
 sudo apt install git automake make gcc g++
 
-# download and build gerbv (needed for the libraries)
+__download and build gerbv (needed for the libraries)__
 mkdir gerb3d
 
 cd gerb3d
@@ -26,7 +27,7 @@ sudo make install
 
 sudo ldconfig
 
-# download and install gerber-renderer
+__download and build gerber-renderer__
 cd ..
 
 git clone https://github.com/tedyapo/gerber-renderer.git
