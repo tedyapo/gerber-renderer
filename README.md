@@ -4,9 +4,11 @@
 # Build Instructions
 
 __install pre-requsites__
+
 sudo apt install git automake make gcc g++
 
 __download and build gerbv (needed for the libraries)__
+
 mkdir gerb3d
 
 cd gerb3d
@@ -28,6 +30,7 @@ sudo make install
 sudo ldconfig
 
 __download and build gerber-renderer__
+
 cd ..
 
 git clone https://github.com/tedyapo/gerber-renderer.git
@@ -40,7 +43,8 @@ cd src
 
 make
 
-# test example
+__test example__
+
 cd ../examples
 
 ../src/gerb3d ddl_power_supply_release_v71.json
