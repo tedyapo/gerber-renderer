@@ -1,5 +1,5 @@
 #include "json_parsing.hpp"
-#include <json/json.h>
+#include <json-c/json.h>
 #include <string>
 #include <sstream>
 #include <cerrno>
