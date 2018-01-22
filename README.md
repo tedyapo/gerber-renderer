@@ -3,6 +3,8 @@
 
 # Build Instructions
 
+These instructions were tested on a fresh lubuntu 17.10 install. The the program doesn't seem to work with mesa software rendering.
+
 __install pre-requsites__
 
 sudo apt install git automake make gcc g++
