@@ -168,9 +168,9 @@ private:
     char const **argv = &args;
     glutInit(&argc, (char**)argv);
     //glutInitDisplayString("rgba=8 depth=24 double samples=4");
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_SRGB | GLUT_DEPTH | GLUT_MULTISAMPLE);
-    glutInitWindowSize(1024, 1024);
-    glutCreateWindow("gerb3vd - soroban_main");
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH | GLUT_MULTISAMPLE);
+    glutInitWindowSize(512, 512);
+    glutCreateWindow("gerb3d");
 //void glutSetWindowTitle(char *name);
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
